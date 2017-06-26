@@ -1,0 +1,93 @@
+BASH commands
+
+pwd | print work directory. / |  denotes root at the beginning.
+
+ls |  list of files
+
+mkdir |  make directory
+
+~ | navigate to home directory
+
+rmdir | remove directory
+
+FLAGS | True or False. Add a flag to a command to change its behaviour.
+- one hyphen on UNIX. -- two hyphens on LINUX
+eg. ls -author
+
+HIDDEN files | Hidden files start with a period, eg. .hidden
+View hidden files by adding the flag -a, which stands for all
+eg. ls -a
+
+CREATE new file | touch = creates a new file
+eg. use it to create a hidden file. touch .self_taught
+-----------------------------------------------------------------------------
+
+PIPES
+
+The pipe in UNIX is (|) The vertical bar is a pipe.
+You can use a pipe to pass the output of a command to another command
+as its input.
+-------------------------------------------------------------------------------
+
+ENVIRONMENTAL VARIABLES
+
+are stored in your operating system, that programs can use to get data
+about the environment they are running in such as the name of computer...
+You can create a new environmental variable in BASH with syntax
+export variable_name = [variable_value]
+
+eg. export x = 100
+echo $x
+>> 100
+
+------------------------------------------------------------------------------
+
+MANUAL pages
+
+man <command> | Look up the manual page for a particular command.
+man -k <search term>
+    Do a keyowrd search for all manual pages containing the given search term.
+/<term> | Within a manual page, perform a search for 'term'
+
+n | After performing a search within a manual page, select the next found item.
+
+q | Quit man pages
+
+----------------------------------------------------------------------------
+
+cp | Copy - ie. Copy a file or directory
+
+mv | Move - ie. Move a file or directory (can also be used to rename).
+
+rm | Remove - ie. Delete a file.
+
+No Undo (be careful when performing destructive actions).
+
+---------------------------------------------------------------------------
+
+GIT commnads
+
+The most commonly used git commands are:
+   add        Add file contents to the index
+   bisect     Find by binary search the change that introduced a bug
+   branch     List, create, or delete branches
+   checkout   Checkout a branch or paths to the working tree
+   clone      Clone a repository into a new directory
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   fetch      Download objects and refs from another repository
+   grep       Print lines matching a pattern
+   init       Create an empty Git repository or reinitialize an existing one
+   log        Show commit logs
+   merge      Join two or more development histories together
+   mv         Move or rename a file, a directory, or a symlink
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+   rebase     Forward-port local commits to the updated upstream head
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+   show       Show various types of objects
+   status     Show the working tree status
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+
